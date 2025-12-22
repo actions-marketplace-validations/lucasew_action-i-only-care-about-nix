@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this action
-        uses: actions/checkout@v6
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
         with:
           path: ./.github/actions/this
       - name: Run this action
@@ -15,4 +15,4 @@ jobs:
       - name: Install ncdu
         run: sudo apt install -y ncdu
       - name: Setup shell stuff for NCDU and stuff
-        uses: mxschmitt/action-tmate@v3
+        uses: mxschmitt/action-tmate@c0afd6f790e3a5564914980036ebf83216678101 # v3
